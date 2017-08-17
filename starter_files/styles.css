@@ -1,19 +1,32 @@
+html {
+  background: grey;
+}
 
 body {
-  background-color: #434e50;
-   height: 770px;
-   width: 690px;
-   border: 1px solid red;
-   margin-left: 270px;
-   width: 700px;
+  background: linear-gradient(grey, black);
+  margin: 0px;
+}
+
+header {
+  height: 10%;
+  background: grey;
+  border-bottom: 2px solid grey;
 }
 
 h1 {
   font-size: 3em;
   font-family: monospace;
-  margin: 0px;
+  margin: 30px;
   text-align: center;
   display: block;
+  color: white;
+}
+
+h2 {
+  font-family: sans-serif;
+  color: white;
+  margin-left: 10%;
+  font-size: 1em;
 }
 
 #searchresults {
@@ -21,16 +34,20 @@ h1 {
   height: 140px;
 }
 
+#artist {
+  color: darkgrey;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
 #searchBox {
-  background: #b2c4c7;
-  width:470PX;
+  background: white;
+  width: 470PX;
   height: 30px;
   font-size: 1em;
-  //display: flex;
-  align-content: flex-end;
   border-radius: 8px;
-  //display: block;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 #submitButton {
@@ -40,34 +57,53 @@ h1 {
   margin-top: 0px;
   font-size: 1em;
   border-radius: 8px;
-  //display: block;
 }
 
 .box {
-  width: 90px;
-  height: 160px;
-  border: 1px solid red;
-  margin: 20px;
+  align-content: center;
+  width: 120px;
+  height: auto;
+  margin: 15px;
 }
 
 .container {
-  flex-wrap: wrap;
-  height: 770px;
+  height: 710px;
 }
 
-.results {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
+#results {
+  justify-content: space-around;
+  margin-left: 10%;
+  width: 80%;
+  height: 440px;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.search-form {
+  margin-top: 3%;
 }
 
 .search {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
+
 #music-player {
-  height: 40px;
-  width: 700px;
+  height: 60px;
+  width: 100%;
+}
+
+p {
+  font-size: 1em;
+  margin: 0px 10px;
+  color: white;
+  font-family: sans-serif;
+}
+
+img {
+  margin-right: 20px;
 }
